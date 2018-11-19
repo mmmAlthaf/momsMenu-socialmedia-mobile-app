@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.mmmalthaf.momsmenu.LoginActivityFB">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/darkblue"
+                android:layout_height="wrap_content"
+                android:text="User Name:"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/usernameID"
+                android:layout_width="200dp"
+                android:textColor="@color/darkblue"
+                android:hint="Username"
+                android:textColorHint="@color/darkblue"
+                android:layout_marginLeft="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkblue"
+                android:text="Password:"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/passwordID"
+                android:hint="Password"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue"
+                android:inputType="textPassword"
+                android:layout_width="200dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/btLogin"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_dark"
+                android:background="@drawable/btncorners"
+                android:text="Login"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tvRegister"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Not yet registered? Click here!"/>
+    </LinearLayout>
+
+</LinearLayout>

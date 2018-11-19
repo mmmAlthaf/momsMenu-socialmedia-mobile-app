@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:id="@+id/sug"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:padding="7dp"
+                android:id="@+id/ingr_name"
+                android:textSize="25dp"
+                android:text="Sugar"
+                android:textColor="@color/darkblue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:padding="7dp"
+                android:textSize="25dp"
+                android:text=":"
+                android:textColor="@color/darkblue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:padding="7dp"
+                android:id="@+id/ingr_details"
+                android:layout_below="@id/ingr_name"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Two Tea Spoons"
+                android:textColor="@color/darkblue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

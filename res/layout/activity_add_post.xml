@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:padding="7dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title: "
+                        android:textSize="20dp"
+                        android:textColor="@color/darkblue"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:id="@+id/recipeTitleID"
+                        android:hint="eg: ShortCake"
+                        android:textColorHint="@color/blue"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/vegID"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Veg"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:id="@+id/nonVegID"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Non Veg"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/add_cmnt_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/camera_icon"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="An s"-->
+                        <!--android:textSize="30dp"-->
+                        <!--android:textColor="@color/darkblue"/>-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/introID"
+                        android:hint="Description"
+                        android:inputType="textLongMessage"
+                        android:textColorHint="@color/blue"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ingredients"
+                            android:textAlignment="center"
+                            android:textColor="#002339"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingredients Chosen"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ingTxt"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ingTxtAmnt"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/ingCard"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ingNameID"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:hint="Ingredient"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ingAmntID"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:hint="Amount"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ing_btn_save"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ing_btn_clear"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Clear"
+                            android:layout_marginLeft="15dp"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Utensils"
+                            android:textAlignment="center"
+                            android:textColor="#002339"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Utensils Chosen"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/utTxt"
+                        android:layout_margin="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/utTxtAmnt"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/utCard"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/utNameID"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Utensils"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/utAmntID"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Details"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ut_btn_save"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ut_btn_clear"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Steps"
+                            android:textAlignment="center"
+                            android:textColor="#002339"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stpTxt"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stpDtl"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/stpCard"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/stpNameID"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Step Title"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/stpDetailID"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:hint="The Step"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/stp_btn_save"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/stp_btn_clear"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/btncorners"
+                            android:backgroundTint="@color/primary_dark"
+                            android:text="Clear"
+                            android:textAllCaps="false"
+                            android:textSize="15dp"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="200dp"
+                android:id="@+id/postRecipeBtn"
+                android:layout_margin="15dp"
+                android:background="@drawable/btncorners"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textColor="#ffffff"
+                android:textSize="45dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

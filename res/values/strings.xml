@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Moms Menu</string>
+    <string name="recipe_steps">1) First make short bread by slowly mixing together sugar, butter and flour.
+        \n\n
+        2) Also add an egg once it all come together to make a dough, dust some more flour and roll it flat like a chapatti. Cut it with a heart shape ring mould then take another bigger cutter to make a layer of shortbread to form boundaries.
+        \n\n
+        3)Bake it for 180 degree for about 9 minutes .</string>
+    <string name="steps_jam">1.Blend strawberries and sugar together and add gelatine. Boil it until thick.\n\n2)Chill the jam down and fill between heart moulds along with some generous icing of sugar on it before serving.</string>
+    <string name="Intro">These delicious shortbread jam biscuits are exactly what your sweet cravings are made of. They’re buttery, filled with sweet jam and a little sugar glaze drizzle! There is absolutely nothing that you will not love about this recipe, it is easy, quick and not at all messy.</string>
+    <string name="title">Strawberry Jam Shortbread Biscuit</string>
+    <string name="title_activity_fr_popup_screen">FR_popupScreen</string>
+</resources>
